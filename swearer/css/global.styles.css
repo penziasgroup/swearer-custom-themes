@@ -1,0 +1,2045 @@
+/*
+ * @file
+ * global.styles
+ *
+ * Styles you add here will load for all device sizes, they are "global", as
+ * opposed to "responsive" styles, which only load for a given breakpoint (media
+ * query) that you set in theme settings. See the README for more details.
+ *
+ *
+ * How to use this file:
+ * --------------------
+ *
+ * There are many empty selectors and some basic styles to act as a guide.
+ * Nothing is set in stone and you can change anything - even delete all of it
+ * and start with your own clean slate.
+ *
+ * To FORCE PRINT all selectors you can search and replace a single { (opening
+ * curly brace) and insert an empty comment. This is very useful in conjuction
+ * with FireSass: https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/
+ *
+ * See global.base also which includes normalize.css and some additional
+ * helper classes and base styles.
+ */
+/* =============================================================================
+ *   Base
+ * ========================================================================== */
+/*
+ * To preserve theme settings never apply font properties to the HTML element.
+ * This is critically important if you are using the Responsive JavaScript
+ * feature as this relies on being able to set a pseudo font family on the HTML
+ * element. If you need to set default font properties of any kind use the BODY
+ * element as these can be overridden using font theme settings.
+ */
+/* line 41, ../sass/global.styles.scss */
+html {
+
+}
+
+/* line 45, ../sass/global.styles.scss */
+body {
+
+}
+
+/* =============================================================================
+ *   HTML Elements
+ * ========================================================================== */
+/* line 135, ../sass/global.styles.scss */
+pre,
+code,
+tt,
+samp,
+kbd,
+var {
+
+}
+
+/* =============================================================================
+ *   Wrappers
+ * ========================================================================== */
+/*
+ * Outer wrappers:
+ * - #page-wrapper: body > #page-wrapper
+ * - #page: body > #page-wrapper > #page
+ * - .container: body > #page-wrapper > #page.container
+ *
+ * The .container class holds the page width value from theme settings. You can
+ * style the .container class but do not add width such as border, padding,
+ * margins etc.
+ */
+/*
+ * Wraps all header elements - branding and .region-header
+ */
+/*
+ * Wraps the sidebars the content column
+ */
+/*
+ * Main content column wrapper
+ */
+/*
+ * Wraps the main-content-header, the content region and feed-icons. Use this
+ * wrapper to style the entire main content column
+ */
+/*
+ * Wraps the content region, avoid applying styles to this wrapper, its used
+ * mainly for position and invisible gutters and can be problematic to style
+ */
+/*
+ * Footer wrapper
+ */
+/*
+ * Panels may need additional margin wrangling when in the $content region
+ */
+/*
+ * Full Width Wrappers
+ * These are used in the optional page--full-width-wrappers.tpl.php template.
+ * All have internal .container classes. In the full width wrapper template the
+ * .container classes set the width or max-width - you can style this but never
+ * add any width/margin/padding/borders etc to .container
+ */
+/*
+ * Wraps the leaderboard
+ */
+/*
+ * Wraps the header
+ */
+/* line 231, ../sass/global.styles.scss */
+#header-wrapper {
+  /* Debug styles, is this working */
+}
+
+/*
+ * Wraps the nav elements
+ */
+/*
+ * Wraps breadcrumb
+ */
+/*
+ * Wraps messages and help
+ */
+/*
+ * Wraps the secondary content/preface region
+ */
+/*
+ * Wraps the main content column
+ */
+/*
+ * Wraps the tertiary content/postfix region
+ */
+/*
+ * Footer wrapper
+ */
+/* line 289, ../sass/global.styles.scss */
+#footer-wrapper {
+  /* Debug styles, is this working? */
+
+}
+
+/* =============================================================================
+ *   Branding
+ * ========================================================================== */
+/*
+ * Wraps all the branding elements, logo, name and slogan
+ */
+/*
+ * Logo
+ */
+/* line 310, ../sass/global.styles.scss */
+#logo {
+
+}
+/* line 313, ../sass/global.styles.scss */
+#logo img {
+
+}
+
+/* =============================================================================
+ *   Page content header
+ * ========================================================================== */
+/*
+ * Main content header wraps the page title, tabs and actions links
+ */
+/*
+ * The main page title (h1)
+ */
+/* line 367, ../sass/global.styles.scss */
+#page-title {
+  margin: 0;
+}
+
+/*
+ * Generic styles for the more link
+ */
+/*
+ * Generic styles for links. See the ul.links declaration in node and comment stylesheets
+ */
+/* line 408, ../sass/global.styles.scss */
+ul.links {
+  margin: 0;
+  padding: 0;
+}
+/* line 412, ../sass/global.styles.scss */
+ul.links.inline {
+  display: block;
+}
+/* line 416, ../sass/global.styles.scss */
+ul.links li {
+  display: inline;
+  list-style: none;
+  padding: 0 10px 0 0;
+}
+
+/*
+ * Search results are an ordered list so reset the margin
+ */
+/* line 427, ../sass/global.styles.scss */
+.search-results {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Attribution message and link
+ */
+/* line 436, ../sass/global.styles.scss */
+.attribution {
+  display: block;
+  opacity: 0.65;
+  padding: 1em 0;
+  text-align: center;
+}
+/* line 442, ../sass/global.styles.scss */
+.attribution a {
+  text-decoration: none;
+  color: inherit;
+}
+/* line 446, ../sass/global.styles.scss */
+.attribution a:hover, .attribution a:focus {
+
+}
+
+/* =============================================================================
+ *   Regions
+ * ========================================================================== */
+
+/* =============================================================================
+ *   Links
+ * ========================================================================== */
+/* line 540, ../sass/global.styles.scss */
+a {
+  text-decoration: none;
+}
+/* line 549, ../sass/global.styles.scss */
+a:hover, a:focus {
+
+}
+
+/* =============================================================================
+ *   Primary, Secondary and Menu Bar region menus
+ * ========================================================================== */
+/* line 560, ../sass/global.styles.scss */
+.nav {
+  clear: both;
+  margin: 10px 0;
+}
+/* line 564, ../sass/global.styles.scss */
+.nav ul,
+.nav ul.menu {
+  margin: 0;
+  padding: 0;
+}
+/* line 570, ../sass/global.styles.scss */
+.nav li,
+.nav ul.menu li {
+  display: inline;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 579, ../sass/global.styles.scss */
+.nav li a,
+.nav ul.menu li a {
+  display: block;
+  white-space: nowrap;
+  padding: 0 10px;
+}
+/* line 591, ../sass/global.styles.scss */
+.nav .block {
+  margin-bottom: 0;
+}
+
+/* =============================================================================
+ *   Menu Toggles
+ * ========================================================================== */
+/* line 705, ../sass/global.styles.scss */
+.at-mt .at-menu-toggle,
+.at-mt .at-menu-toggle ul,
+.at-mt .at-menu-toggle ul.menu {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+/* line 713, ../sass/global.styles.scss */
+.at-mt .at-menu-toggle-button {
+  margin: 0;
+}
+/* line 717, ../sass/global.styles.scss */
+.at-mt .at-menu-toggle ul a {
+  padding: 0 10px;
+  white-space: nowrap;
+}
+
+/* =============================================================================
+ *   Menus, usually blocks
+ * ========================================================================== */
+/* line 728, ../sass/global.styles.scss */
+ul.menu {
+  padding-left: 15px;
+}
+/* line 731, ../sass/global.styles.scss */
+ul.menu ul {
+  padding-left: 15px;
+}
+/* line 739, ../sass/global.styles.scss */
+ul.menu li {
+  margin: 0;
+}
+
+/* If li.content exists it's a problem, so reset the padding */
+/* line 768, ../sass/global.styles.scss */
+.block .menu li.content {
+  padding: 0;
+}
+
+/* =============================================================================
+ *   Pagers
+ * ========================================================================== */
+/* line 851, ../sass/global.styles.scss */
+ul.pager {
+  clear: both;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 858, ../sass/global.styles.scss */
+.item-list ul.pager li {
+  margin: 0;
+}
+
+/* line 863, ../sass/global.styles.scss */
+ul.pager li {
+  background-image: none;
+  display: inline;
+  list-style-type: none;
+  padding: .5em;
+}
+/* line 869, ../sass/global.styles.scss */
+ul.pager li.pager-current {
+  font-weight: 700;
+}
+
+/* line 875, ../sass/global.styles.scss */
+.block ul.pager li {
+  margin: 0;
+}
+
+/*
+ * Theme the various states of pager links
+ */
+/* =============================================================================
+ *   Skip Navigation
+ * ========================================================================== */
+/* line 912, ../sass/global.styles.scss */
+#skip-link {
+  left: 50%;
+  margin-left: -6.5em;
+  margin-top: 0;
+  padding: 0 0.5em;
+  position: absolute;
+  width: 12em;
+  z-index: 50;
+}
+/* line 921, ../sass/global.styles.scss */
+#skip-link a {
+  background: #444;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: block;
+  line-height: 2;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 931, ../sass/global.styles.scss */
+#skip-link a:link, #skip-link a:visited {
+  background: #444;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: block;
+  line-height: 2;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 942, ../sass/global.styles.scss */
+#skip-link a:hover, #skip-link a:focus, #skip-link a:active {
+  outline: 0;
+}
+
+/* =============================================================================
+ *   Tabs (local tasks)
+ * ========================================================================== */
+/* line 955, ../sass/global.styles.scss */
+#tasks {
+  margin-bottom: 15px;
+}
+
+/* line 960, ../sass/global.styles.scss */
+ul.primary {
+  border-bottom-color: #ccc;
+  margin: 20px 0;
+  padding: 0 0 0 5px;
+}
+/* line 965, ../sass/global.styles.scss */
+ul.primary li {
+  display: block;
+  float: left;
+  margin: 0 1px -1px;
+}
+/* line 970, ../sass/global.styles.scss */
+ul.primary li a {
+  background-color: #f5f5f5;
+  border-color: #ccc;
+  margin-right: 1px;
+  padding: 0 10px;
+  display: block;
+  float: left;
+  height: 1.5em;
+  line-height: 1.5em;
+}
+/* line 980, ../sass/global.styles.scss */
+ul.primary li a:hover, ul.primary li a:focus {
+  background-color: #eee;
+  border-color: #ccc;
+}
+/* line 989, ../sass/global.styles.scss */
+ul.primary li.active a,
+ul.primary li.active a:hover,
+ul.primary li.active a:focus {
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+
+/* line 999, ../sass/global.styles.scss */
+ul.secondary {
+  border-bottom: 1px solid #ccc;
+  margin: 1em 0 0;
+  padding: 0 .3em 1em;
+}
+/* line 1004, ../sass/global.styles.scss */
+ul.secondary li {
+  border-right: 0;
+  list-style: none;
+  padding: 0 10px 0 0;
+}
+/* line 1010, ../sass/global.styles.scss */
+ul.secondary li a:hover, ul.secondary li a.active {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+/* =============================================================================
+ *   Action links
+ * ========================================================================== */
+/* line 1024, ../sass/global.styles.scss */
+ul.action-links {
+  margin: 20px 0 0;
+  list-style: none;
+}
+
+/* =============================================================================
+ *  Field Styling
+ * ========================================================================== */
+/*
+ * Wrapper for any field
+ */
+/*
+ * Above and inline classes are on the field wrapper
+ */
+/*
+ * When labels are set to inline in field display settings the clearfix class is automatically added
+ */
+/* line 1051, ../sass/global.styles.scss */
+.field-label-inline {
+  /* Remove the margin on inline field lables to preserve vertical formatting */
+}
+/* line 1054, ../sass/global.styles.scss */
+.field-label-inline .field-label {
+  margin: 0;
+}
+
+/*
+ * Labels are h2 in Adaptivetheme. Use a strong selector to mitigate unwanted ineritance issues
+ */
+/* line 1062, ../sass/global.styles.scss */
+.field-label {
+  font-size: 1em;
+  font-weight: 700;
+  font-family: inherit;
+  line-height: inherit;
+  margin-bottom: 0;
+}
+
+/*
+ * Field types (Core)
+ */
+/*
+ * Image fields use the <figure> and <figcaption> elements from HTML5
+ */
+/*
+ * Taxonomy
+ */
+/* line 1091, ../sass/global.styles.scss */
+.field-type-taxonomy-term-reference {
+  /* The same bottom margin as p, blockquote, ul, ol and dl */
+  margin-bottom: 1.5em;
+}
+/* line 1096, ../sass/global.styles.scss */
+.field-type-taxonomy-term-reference.field-label-inline .field-items {
+  margin: 0;
+  padding: 0;
+}
+/* line 1101, ../sass/global.styles.scss */
+.field-type-taxonomy-term-reference.field-label-inline .field-item {
+  display: inline;
+  list-style: none;
+  padding: 0 10px 0 0;
+}
+
+/* line 1215, ../sass/global.styles.scss */
+.ia-l .field-type-image figure,
+.iat-l .field-type-image figure {
+  margin: 5px 20px 15px 0;
+}
+
+/*
+ * Centered setting
+ */
+/* line 1224, ../sass/global.styles.scss */
+.ia-c .field-type-image figure,
+.iat-c .field-type-image figure {
+  margin: 5px auto 15px;
+}
+
+/*
+ * Float right setting
+ */
+/* line 1233, ../sass/global.styles.scss */
+.ia-r .field-type-image figure,
+.iat-r .field-type-image figure {
+  margin: 5px 0 15px 20px;
+}
+
+/* =============================================================================
+ *   Block Styling
+ * ========================================================================== */
+/*
+ * Main wrapper for most blocks, block_system_main does not have it
+ */
+/* line 1247, ../sass/global.styles.scss */
+.block {
+}
+
+/* line 1285, ../sass/global.styles.scss */
+.block-title {
+  margin: 0;
+}
+
+/*
+ * Block content wrapper
+ */
+/*
+ * Match item list and block menu margin and padding
+ */
+/* line 1301, ../sass/global.styles.scss */
+.block-content ul,
+.block-content ol {
+  padding: 0 0 0 15px;
+}
+/* line 1306, ../sass/global.styles.scss */
+.block-content li {
+  margin: 0;
+  padding: 0;
+}
+
+/* =============================================================================
+ *   Node Styling
+ * ========================================================================== */
+/* line 1479, ../sass/global.styles.scss */
+.node {
+  
+}
+/* line 1496, ../sass/global.styles.scss */
+.node .node-title {
+  margin: 0;
+}
+
+/* =============================================================================
+ *   Forms
+ * ========================================================================== */
+/*
+ * Wrapper for a form element (or group of form elements) and its label
+ */
+/* line 1657, ../sass/global.styles.scss */
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border: 1px solid #c00;
+}
+/* line 1663, ../sass/global.styles.scss */
+.form-item label {
+  font-weight: 700;
+}
+/* line 1670, ../sass/global.styles.scss */
+.form-item .description {
+  font-size: 0.85em;
+}
+
+/*
+ * Highlight marks and form required mark
+ */
+/* line 1683, ../sass/global.styles.scss */
+.marker,
+.form-required {
+  color: #c00;
+}
+
+/*
+ * The submit button
+ */
+/* line 1697, ../sass/global.styles.scss */
+.container-inline div,
+.container-inline label {
+  display: inline;
+}
+
+/*
+ * Define consistent borders
+ */
+/* line 1706, ../sass/global.styles.scss */
+fieldset {
+  border: 1px solid #ccc;
+}
+
+/*
+ * Tips for Drupal's input formats
+ */
+/*
+ * Buttons used by contrib modules like Media
+ */
+/* line 1720, ../sass/global.styles.scss */
+a.button {
+  -moz-appearance: button;
+  -webkit-appearance: button;
+}
+
+/*
+ * Password confirmation
+ */
+/* line 1728, ../sass/global.styles.scss */
+.password-parent,
+.confirm-parent {
+  margin: 0;
+}
+
+/* =============================================================================
+ *   Tables
+ * ========================================================================== */
+/* line 1738, ../sass/global.styles.scss */
+table {
+  margin: 10px 0;
+  padding: 0;
+  width: 100%;
+}
+/* line 1743, ../sass/global.styles.scss */
+table.sticky-header {
+  z-index: 10;
+}
+
+/* line 1749, ../sass/global.styles.scss */
+table,
+thead,
+tbody,
+tr,
+th,
+td {
+  border-color: #ccc;
+}
+
+/* line 1759, ../sass/global.styles.scss */
+table,
+td,
+th {
+  vertical-align: middle;
+}
+
+/* line 1766, ../sass/global.styles.scss */
+caption,
+th,
+td {
+  text-align: left;
+}
+
+/* line 1773, ../sass/global.styles.scss */
+thead tr {
+  font-weight: 700;
+  background-color: #e5e5e5;
+}
+
+/* line 1779, ../sass/global.styles.scss */
+td,
+th {
+  border-bottom: 0;
+  margin: 0;
+  padding: 5px 7px;
+}
+
+/* line 1790, ../sass/global.styles.scss */
+tbody tr {
+  border-top: 1px solid #ccc;
+}
+
+/* line 1795, ../sass/global.styles.scss */
+tr {
+  /* Table row striping */
+}
+/* line 1797, ../sass/global.styles.scss */
+tr.odd {
+  background: #fff;
+}
+/* line 1802, ../sass/global.styles.scss */
+tr.info, tr.even, tr:nth-child(2n+2) {
+  border-bottom: 0;
+  background-color: #f5f5f5;
+}
+/* line 1813, ../sass/global.styles.scss */
+tr.odd td.active {
+  background-color: #eee;
+}
+/* line 1817, ../sass/global.styles.scss */
+tr.even td.active {
+  background-color: #ebebeb;
+}
+
+/*
+ * Forum tables
+ * Core sets white-space to nowrap, which makes no sense
+ */
+/* line 1840, ../sass/global.styles.scss */
+#forum td.created, #forum td.posts, #forum td.topics, #forum td.last-reply, #forum td.replies, #forum td.pager {
+  white-space: normal;
+}
+
+/* =============================================================================
+ *   Messages
+ * ========================================================================== */
+/* line 1856, ../sass/global.styles.scss */
+div.messages {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+/* line 1861, ../sass/global.styles.scss */
+div.messages ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*
+ * Unpublished nodes
+ */
+/* line 1902, ../sass/global.styles.scss */
+.node-unpublished p.unpublished,
+.comment-unpublished p.unpublished {
+  color: pink;
+  color: rgba(239, 170, 170, 0.4);
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  text-align: center;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+/* line 186, ../sass/_custom.scss */
+.ie6-7 .node-unpublished p.unpublished > *, .ie6-7
+.comment-unpublished p.unpublished > * {
+  position: relative;
+}
+
+/* =============================================================================
+ *    Maintenance pages
+ * ========================================================================== */
+/* line 1913, ../sass/global.styles.scss */
+.maintenance-page .container {
+  padding: 40px 0;
+}
+/* line 1917, ../sass/global.styles.scss */
+.maintenance-page #site-name,
+.maintenance-page #page-title {
+  margin: 0;
+}
+
+/* line 1925, ../sass/global.styles.scss */
+.db-offline .container {
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 100%;
+  max-width: 960px;
+}
+/* line 1932, ../sass/global.styles.scss */
+.db-offline div.messages {
+  margin: 20px 0 0;
+}
+/* line 1936, ../sass/global.styles.scss */
+.db-offline #content {
+  padding: 20px 0;
+}
+
+/* =============================================================================
+ *   Misc overrides for contrib modules
+ * ========================================================================== */
+/*
+ * Admin menu overrides
+ */
+/* line 1949, ../sass/global.styles.scss */
+#admin-menu {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Devel Module
+ */
+/* line 1958, ../sass/global.styles.scss */
+.dev-query {
+  background: #eee;
+  padding: 30px;
+}
+
+/*
+ * Styleguide module tweaks
+ */
+/* line 1967, ../sass/global.styles.scss */
+#styleguide-header {
+  padding: 0 10px;
+}
+/* line 1970, ../sass/global.styles.scss */
+#styleguide-header .item-list {
+  font-family: inherit;
+  margin: 0 20px 20px 0;
+  min-height: 260px;
+  width: auto;
+}
+
+/*# sourceMappingURL=global.styles.css.map */
+
+h1#page-title{
+    margin-bottom: 20px;
+}
+
+#page{
+    padding-top: 65px;
+}
+
+.container{
+    box-sizing: border-box;
+    padding: 0 25px;
+}
+
+#header-wrapper{
+    margin-bottom: 60px;
+}
+#branding{
+    float: left;
+}
+
+#burger-wrap,
+#search-glass{
+    float: right;
+}
+
+.region-header{
+    clear: both;
+}
+#burger-wrap{
+    margin-top: 138px;
+}
+#search-glass{
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 25px;
+    margin-top: 140px;
+}
+#block-search-form{
+    margin-bottom: 0;
+    float: right;
+    width: 243px;
+    padding-right: 17px;
+}
+.region-header,
+#block-search-form input[type='submit']{
+    display: none;
+}
+#block-search-form input[type='search']{
+    padding: 6px;
+    width: 100%;
+}
+.burger{
+    font-size: 24px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-top: 3px;
+    color: #ed1c24;
+}
+
+.burger img{
+    margin-right: 3px;
+}
+
+#main-content-header .title-wrap {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+/* Front */
+
+.front #columns{
+    background-image: url(images/home-bg-img.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.pillar-menu h2.block-title{
+        font-size: 14.3vw;
+        text-transform: capitalize;
+}
+.pillar-menu ul.menu{
+    padding: 0;
+    margin: 4.65vw 0 7.15vw;
+}
+.pillar-menu ul.menu li{
+    display: inline-block;
+    width: 33%;
+    padding: 0;
+    margin-right: .5%;
+    text-align: center;
+}
+.pillar-menu ul.menu li.last{
+    margin-right: 0;
+}
+.pillar-menu ul.menu li a{
+    display: block;
+    background-color: #ed1c24;
+    font-size: 4.3vw;
+    color: #FFF;
+    line-height: 1;
+    padding: 7px 0 17px;
+}
+
+#block-views-homepage-statement-block,
+.audience-menu{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#block-views-homepage-statement-block{
+    width: 66.66%;
+}
+
+.audience-menu{
+    width: 28%;
+    margin-left: 5.3%;
+}
+
+#block-views-homepage-statement-block .views-field-body{
+    font-size: 2.15vw;
+    padding: 3.57vw 2vw 5vw 2.5vw;
+    line-height: 1.4;
+    background-color: rgba(255,255,255,.7);
+    margin-bottom: 7px;
+}
+#block-views-homepage-statement-block .views-field-field-statement-link a{
+    font-size: 2.58vw;
+    padding: 1.22vw 2.2vw 1.45vw;
+    line-height: 1.2;
+    background-color: #ed1c24;
+    color: #FFF;
+    display: block;  
+}
+
+.audience-menu ul.menu{
+    padding: 0;
+    margin: 0;
+}
+
+.audience-menu ul.menu li{
+    padding: 0;
+    margin: 0 0 .35vw;
+    list-style: none;
+}
+
+.audience-menu ul.menu li.last{
+    margin-bottom: 0;
+}
+
+.audience-menu ul.menu li a{
+    background-color: #ed1c24;
+    color: #FFF;
+    font-size: 2.58vw;
+    padding: 1.22vw 2.2vw 1.45vw;
+    display: block;
+    text-transform: lowercase;
+    line-height: 1.2;
+}
+
+#block-views-stories-block-2{
+    margin-top: 120px;
+}
+
+/* Grid Displays */
+.grid:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.grid article{
+    position: relative;
+}
+
+.grid article img{
+    display: block;
+    width: 100%;
+}
+
+.grid article .node-title{
+    position: absolute;   
+    bottom: 0;  
+    width: 100%;
+    box-sizing: border-box;
+}
+.grid.explore article .node-title{
+    top: 0;
+    left: 0;
+    bottom: initial;
+    width: auto;
+}
+.grid article .node-title a{
+    color: #FFF;
+    font-size: 1.71vw;
+    line-height: 1.3;
+    background-color: rgba(0,0,0,.5);
+    padding: 18px 30px;
+    display: block;
+}
+.grid.explore article .node-title a{
+    background-color: #fc0d1b;
+    padding: 4px 15px 11px;
+    line-height: 1;
+    font-size: 36px;
+}
+.field-name-field-cta-description a{
+    background-color: #fc0d1b;
+    color: #FFF;
+    display: block;
+    font-size: 19px;
+    line-height: 1.3;
+    padding: 15px 10px 35px;
+}
+.grid article:hover{
+    cursor: pointer;
+}
+.grid article.vocabulary-initiatives:hover,
+.grid article.vocabulary-research:hover{
+    cursor: initial;
+}
+.grid article:hover:before{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #ed1c24;
+    z-index: 99;    
+}
+.grid article.vocabulary-research:hover:before{
+    display: none;
+}
+.grid article:hover .node-title a{
+    background: rgba(237,28,36,.8); 
+}
+.grid article.node-call-to-action:hover .node-title a{
+    background-color: #ed1c24;
+}
+
+.grid .views-row{
+    margin-bottom: 12px;
+}
+.two-wide .views-row{
+    float: left;
+    width: 49.5%;
+    margin-right: 1%;
+}
+.two-wide .views-row:nth-child(2n){
+    margin-right: 0;
+}
+.three-wide .views-row{
+    float: left;
+    width: 33.06%;
+    margin-right: .4%;
+}
+.three-wide .views-row:nth-child(3n){
+    margin-right: 0;
+}
+
+.four-wide .views-row{
+    float: left;
+    width: 24.33%;
+    margin-right: .89%;
+}
+.four-wide .views-row:nth-child(4n){
+    margin-right: 0;
+}
+
+/* Stories */
+
+article.node-story.node-mini-teaser .node-title a{
+    background-color: #fc0d1b;
+    font-size: 16px;
+    padding: 15px;
+}
+article.node-story.node-mini-teaser:hover .node-title a{
+    background-color: #000;
+}
+
+article.node-story.node-mini-teaser:hover:before{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #000;
+    z-index: 99;
+}
+
+#block-views-stories-block-1{
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #fc0d1b;
+}
+
+#block-views-stories-block-1 .view-filters{
+    margin-bottom: 15px;
+}
+
+.form-type-select {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #fc0d1b;
+    border: none;
+    background: #fc0d1b url("images/select-arrow.png") no-repeat 95% 50%;
+}
+
+.form-type-select select {
+    padding: 13px 20px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #FFF;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+}
+.form-type-select select option{
+    color: #000;
+}
+.form-type-select select:focus {
+    outline: none;
+}
+.ctools-auto-submit-processed .views-exposed-form .views-submit-button{
+    display: none;
+}
+
+.group-media-area,
+.group-story-content,
+.group-topics,
+.back-button,
+.border-sep{
+    margin-top: 45px;
+    padding-top: 45px;
+    border-top: 1px solid #fc0d1b;
+}
+.group-topics{
+    padding-top: 20px;
+}
+
+.faq-back a,
+.back-button a{
+    background-color: #fc0d1b;
+    color: #FFF;
+    font-size: 2.14vw;
+    display: block;
+    max-width: 730px;
+    padding: 20px;
+}
+
+.node-type-story h2.node-title{
+    font-size: 48px;
+    color: #000;
+    font-family: opensans-semi;
+    text-transform: lowercase;
+    margin-bottom: 20px;
+}
+
+.node-type-story .field-name-field-author,
+.node-type-story .node-created{
+    font-size: 14px;
+}
+.node-type-story #content{
+    max-width: 1035px;
+}
+.type-link{
+    font-family: opensans-bold;
+}
+.field-name-field-photo-essay{
+    position: relative;
+}
+.field-name-field-featured-image-caption,
+.field-name-field-essay-caption{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.group-topics h3{
+    margin-top: 0;
+    font-family: opensans-light;
+    font-size: 24px;
+    text-transform: lowercase;
+    font-weight: normal;
+}
+
+.group-topics div,
+.group-topics ul,
+.group-topics li{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.group-topics li{
+    list-style: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.group-topics li a{
+    font-size: 12px;
+    color: #FFF;
+    background-color: #4c4c4c;
+    display: block;
+    padding: 5px 10px;
+}
+
+.cycle-button{
+    position: absolute;
+    top: 43%;
+    text-shadow: 2px 2px 2px #000;
+    color: #FFF;
+    font-size: 61px;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s linear;
+    z-index: 99;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    opacity: 1;
+    z-index: 500;
+}
+.cycle-prev{
+    left: 0;
+}
+.cycle-prev:before{
+    content: '\f104';
+    padding: 0 20px 0 15px;
+}
+.cycle-next{
+    right: 0;
+}
+.cycle-next:before{
+    content: '\f105';
+    padding: 0 15px 0 20px;
+}
+
+/* Taxonomy Card */
+.group-tax-card-content{
+    font-family: opensans-semi;
+    font-size: 14px;
+}
+.group-tax-card-content a,
+.group-tax-card-content h2,
+.group-tax-card-content h2 a{
+    color: #FFF;
+}
+
+.group-tax-card-content h2{
+    font-size: 1.72vw;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.vocabulary-initiatives .group-tax-card-content h2,
+.vocabulary-research .group-tax-card-content h2{
+    margin-bottom: 15px;
+}
+.group-tax-card-content{
+    background-color: #fc0d1b;
+    color: #FFF;
+    padding: 32px 32px 42px;
+}
+.vocabulary-person-type .group-tax-card-content,
+.vocabulary-initiatives .group-tax-card-content{
+    padding-top: 20px;
+}
+.group-tax-card-content .taxonomy-term-description,
+.group-tax-card-content .taxonomy-term-description p{
+    margin: 0;
+    line-height: 1.3;
+}
+.title-only .group-tax-card-content{
+    padding: 0;
+}
+.title-only .group-tax-card-content a{
+    padding: 32px 32px 42px;
+    display: block;
+}
+
+/* People */
+.advisors-list .results-group,
+.people-list .views-row{
+    border-top: 1px solid #ed1c24;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.advisors-list .results-group{
+    padding-bottom: 40px;
+}
+.advisors-list .results-group .views-row{
+    margin-bottom: 6px;
+}
+.advisors-list .results-group > h3{
+    margin-top: 0;
+    font-size: 36px;
+    color: #ed1c24;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+.node-people.node-teaser .group-image-left,
+.node-people.node-teaser .group-content-right{
+    display: table-cell;
+    vertical-align: top;
+}
+.node-people.node-teaser .group-image-left{
+    width: 200px;
+    padding-right: 15.75%;
+}
+.node-people.node-teaser .group-image-left img{
+    min-width: 200px;
+}
+.node-people.node-teaser .group-content-right{
+    
+}
+.node-type-people .field-name-field-email a,
+.node-people.node-teaser a,
+.node-people.node-mini-teaser a{
+    color: #000;
+}
+.node-people.node-teaser h2.node-title{
+    font-size: 24px;
+    font-family: opensans-semi;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+.node-people.node-mini-teaser h2.node-title{
+    font-size: 18px;
+    font-family: opensans-semi;
+    color: #000;
+}
+.group-person-affiliation{
+    margin-bottom: 20px;
+}
+.group-person-affiliation .field-label{
+    color: #000;
+    font-weight: normal;
+}
+.field-name-field-location,
+.field-name-field-joined-swearer,
+.node-people .field-name-field-concentration,
+.node-people .field-name-field-leadership-title,
+.node-people .field-name-field-title-dept{
+    font-style: italic;
+    font-size: 14px;
+}
+
+.node-people .field-name-field-email{
+    font-family: opensans-semi;
+}
+.node-people.node-mini-teaser .node-content > h2,
+.node-people.node-mini-teaser .node-content > div{
+    display: inline-block;
+    margin-right: 10px;
+}
+.node-people.node-mini-teaser .field-name-field-title-dept .field-items > .field-item{
+    display: inline-block;
+}
+.node-people.node-mini-teaser .field-name-field-title-dept .field-items > .field-item:after{
+    content: ', ';
+    margin-right: 3px;
+}
+.node-people.node-mini-teaser .field-name-field-title-dept .field-items > .field-item:last-child:after{
+    content: '';
+    margin-right: 0;
+}
+.node-type-people .field-name-field-person-type{
+    font-size: 48px;
+    color: #ed1c24;
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #ed1c24;
+}
+.node-type-people .field-name-field-person-type ul{
+    padding: 0;
+    margin: 0;
+}
+.node-type-people .field-name-field-person-type ul li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.node-type-people .group-image-left,
+.node-type-people .group-content-right{
+    display: table-cell;
+    vertical-align: top;
+}
+.node-type-people .group-image-left{
+    width: 32%;
+    padding-right: 3%;
+}
+.node-type-people .group-content-right{
+    width: 65%;
+}
+.node-type-people h2.node-title{
+    font-size: 30px;
+    font-family: opensans-semi;
+    color: #000;
+    margin-bottom: 20px;
+}
+.node-type-people .field-name-field-email{
+    font-family: opensans-bold;
+}
+.node-type-people .paragraphs-items-field-courses,
+.node-type-people .paragraphs-items-field-related-work,
+.node-type-people .field-name-body,
+.node-type-people .group-info-top{
+    margin-bottom: 30px;
+}
+.node-type-people .field-name-field-related-work h2.field-label,
+.node-type-people .field-name-field-courses h2.field-label{
+    font-size: 18px;
+    font-family: opensans-semi;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.node-type-people .field-name-field-courses .content > .field{
+    display: inline-block;
+    margin-right: 7px;
+}
+.node-type-people .field-name-field-courses a{
+    color: #0073b9;
+}
+.node-type-people .field-name-field-project-title{
+    font-size: 14px;
+    font-family: opensans-semi;
+    margin-bottom: 3px;
+}
+
+.node-type-people .field-name-field-related-work > .field-items > .field-item{
+    margin-bottom: 15px
+}
+.node-type-people .field-name-field-related-work > .field-items > .field-item:last-child{
+    margin-bottom: 0;
+}
+.node-type-people .field-name-field-project-url{
+    margin-top: 3px;
+}
+.node-type-people .field-name-field-project-url a{
+    color: #000;
+    font-family: opensans-semi;
+}
+
+/* Programs */ 
+
+.group-prog-apply .field-name-field-application-url,
+.group-prog-apply .field-name-field-apply,
+.group-prog-about .taxonomy-term-description,
+.group-prog-about .fellows-link{
+    display: table-cell;
+    vertical-align: top;
+}
+.group-prog-about .taxonomy-term-description,
+.group-prog-apply .field-name-field-apply{
+    padding-right: 80px;
+    box-sizing: border-box;
+}
+.group-prog-about .fellows-link,
+.group-prog-apply .field-name-field-application-url{
+    width: 140px;
+}
+.group-prog-about .fellows-link,
+.group-prog-apply .field-name-field-application-url a{
+    font-size: 30px;
+    text-transform: lowercase;
+    line-height: 1.2;
+}
+
+.group-bottom-links a{
+    background-color: #fc0d1b;
+    color: #FFF;
+    font-size: 2.14vw;
+    float: left;
+    display: block;
+    width: 49.5%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-right: 1%;
+    text-transform: lowercase;
+}
+.group-bottom-links a:last-child{
+    margin-right: 0;
+}
+
+.faq-list .views-row{
+    padding: 30px 0 15px;
+    border-top: 1px solid #fc0d1b;
+}
+
+.faq-list .field-name-field-question{
+    font-family: opensans-bold;
+}
+
+.prog-fellows-list .results-group > h3{
+    font-family: opensans-bold;
+    font-size: 2.57vw;
+    color: #FFF;
+    background-color: #fc0d1b;
+    padding: 15px 15px 15px 6.4vw;
+    background-image: url(images/fellow-arrow.png);
+    background-position: 20px center;
+    background-repeat: no-repeat;
+    background-size: 2.5%;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.prog-fellows-list .results-group > h3.open{
+    background-image: url(images/fellow-arrow-down.png);
+}
+.prog-fellows-list .results-group .results{
+    padding: 40px 40px 40px 6.4vw;
+}
+.prog-fellows-list .results-group .results .views-row{
+    margin-bottom: 10px;
+}
+.prog-fellows-list .results-group .results .views-field-title{
+    font-family: opensans-bold;
+}
+.prog-fellows-list .results-group .results a{
+    font-size: 14px;
+    color: #000;
+}
+
+.results:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+/* Fellow Detail Page */
+.node-type-program-fellows .field-name-field-program ul{
+    padding: 0;
+    margin: 0;
+}
+.node-type-program-fellows .field-name-field-program ul li{
+   list-style: none;
+   font-size: 48px;
+   font-family: opensans;
+   color: #ed1c24;
+   font-weight: normal;
+   margin-top: 0;
+   line-height: 1;
+   margin-bottom: 20px;
+}
+
+.node-type-program-fellows .group-image-left,
+.node-type-program-fellows .group-content-right{
+    display: inline-block;
+    vertical-align: top;
+}
+.node-type-program-fellows .group-image-left{
+    width: 66.66%;
+}
+.node-type-program-fellows .group-content-right{
+    width: 33.33%;
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+.node-type-program-fellows .group-name-wrap{
+    font-size: 48px;
+    font-family: opensans-semi;
+    line-height: 1.2;
+}
+.node-type-program-fellows .group-content-right{
+    font-size: 30px;
+}
+.node-type-program-fellows .group-content-right .field-label{
+    font-size: 18px;
+    color: #000;
+}
+.node-type-program-fellows .group-content-right .date-display-single{
+    font-family: opensans-semi;
+}
+.node-type-program-fellows .field-name-field-project-title{
+    font-family: opensans-semi;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.group-image-caption{
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Events */
+.view-events .views-row{
+    border-top: 1px solid #ed1c24;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.node-event.node-teaser .node-content{
+    display: table;
+    width: 100%;
+}
+.group-event-image,
+.group-date,
+.group-event-info{
+    display: table-cell;
+    vertical-align: top;
+}
+.group-date{
+    width: 32%;
+    padding-right: 3%;
+}
+.group-date .field-name-field-event-date{
+    border: 1px solid #ed1c24;
+    border-top: 12px solid #ed1c24;
+    font-size: 24px;
+    font-family: opensans-semi;
+    padding: 10px 10px 25px;   
+}
+.group-event-info{
+    width: 68%;
+}
+.node-type-event .group-event-image,
+.view-events .attachment .group-event-image{
+    width: 40%;
+    padding-right: 3%;
+}
+.node-type-event .group-event-info,
+.view-events .attachment .group-event-info{
+    width: 60%;
+}
+.group-event-info h2.node-title{
+    font-size: 24px;
+    font-family: opensans-semi;
+    margin-bottom: 17px;
+    line-height: 1.3;
+}
+.group-event-info h2.node-title a{
+    color: #000;
+}
+.group-event-info .field-name-field-speaker-name{
+    font-family: opensans-bold;
+    font-size: 14px;
+}
+.group-event-info .field-name-field-title-dept{
+    font-style: italic;
+    font-size: 14px;
+}
+.group-date-info,
+.group-speaker-info,
+.group-time-location{
+    margin-bottom: 20px;
+}
+.group-date-info,
+.group-time-location > div{
+    display: inline-block;
+    font-size: 18px;
+    font-family: opensans-semi;
+    margin-right: 30px;
+}
+.group-date-info > div,
+.attachment .group-time-location > div{
+    display: block;
+    margin: 0;
+}
+.group-time-location > div:last-child{
+    margin-right: 0;
+}
+.views-field-field-event-location a,
+.field-name-field-event-location a{
+    color: #000;
+}
+.view-events .views-field-view-node a,
+.link-to-event a{
+    font-family: opensans-bold;
+    color: #000;
+}
+.node-type-event h2.node-title,
+.view-events .attachment .views-field-title a{
+    color: #000;
+    font-size: 36px;
+    font-family: opensans-semi;
+    line-height: 1.3;
+}
+.node-type-event h2.node-title,
+.view-events .attachment .views-field-title{
+    margin-bottom: 30px;
+}
+.view-events .attachment .speaker-info{
+    margin-bottom: 20px;
+}
+.node-type-event .field-name-field-speaker-name,
+.view-events .attachment .views-field-field-speaker-name{
+    font-size: 24px;
+    font-family: opensans-semi;
+    
+}
+.node-type-event .field-name-field-title-dept,
+.view-events .attachment .views-field-field-title-dept{
+    font-size: 16px;
+    font-style: italic;
+}
+.node-type-event .field-name-field-event-sponsor,
+.node-type-event .field-name-field-event-registration-info{
+    font-size: 14px;
+}
+.group-event-buttons{
+    display: table;
+    width: 100%;
+    margin-top: 40px;
+}
+.group-event-buttons > div{
+    display: table-cell;
+    width: 50%;
+}
+.add-event-button{
+    padding-right: .5%;
+}
+.field-name-field-event-registration-url{
+    padding-left: .5%;
+}
+.node-type-event .addeventatc:hover,
+.node-type-event .addeventatc:focus,
+.node-type-event .addeventatc:active,
+.node-type-event .addeventatc,
+.field-name-field-event-registration-url a{
+    background-color: #ed1c24;
+    color: #FFF !important;
+    font-size: 30px;
+    display: block;
+    top: 0;
+    background-image: none;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    font-family: opensans;
+    line-height: 1;
+    padding: 30px 15px;
+}
+.node-type-event .addeventatc .addeventatc_icon{
+    display: none;
+}
+
+.node-type-event .group-event-info h2.field-label{
+    font-size: 18px;
+    color: #000;
+    font-family: opensans-semi;
+    margin-bottom: 15px;
+}
+.node-type-event .group-event-info section{
+    margin-bottom: 40px;
+    padding-right: 40px;
+}
+.node-type-event .group-event-info section:last-child{
+    margin-bottom: 0;
+}
+
+/* Taxonomy Detail Pages */
+.group-large-image,
+.group-large-content{
+    display: table-cell;
+    vertical-align: top;
+}
+.group-large-image{
+    width: 73%;
+}
+.group-tag-wrap{
+    position: relative;
+}
+.group-large-image .type-link{
+    position: absolute;
+    right: 0;
+    bottom: 45px;
+}
+.group-large-image .type-link a{
+    font-size: 30px;
+    color: #FFF;
+    background-color: #ed1c24;
+    padding: 13px 90px 13px 30px;
+    display: block;
+}
+.group-large-image img{
+    display: block;
+}
+.group-large-content{
+    width: 25%;
+    min-width: 345px;
+    padding-left: 2%;
+}
+.group-large-content h2.node-title{
+    margin-bottom: 20px;
+}
+.group-large-content h2.node-title,
+.group-large-content h2.node-title a{
+    font-size: 24px;
+    font-family: opensans-bold;
+    color: #000;
+    line-height: 1.3;
+}
+.group-large-content .field-name-body{
+    font-size: 16px;
+}
+
+.group-description-links .taxonomy-term-description{
+    padding-right: 70px;
+}
+
+.group-description-links .taxonomy-term-description,
+.group-description-links .field-name-field-vertical-links{
+    display: table-cell;
+    vertical-align: top;
+}
+
+.group-description-links .field-name-field-vertical-links .field-item{
+    border-bottom: 1px solid #ed1c24;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.group-description-links .field-name-field-vertical-links .field-item:last-child{
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.group-description-links .field-name-field-vertical-links a{
+    font-size: 30px;
+    line-height: 1.2;
+    display: block;
+    padding-right: 30px;
+}
+.field-name-field-horizontal-links .field-item{
+    width: 49.75%;
+    margin-right: .5%;
+    display: inline-block;
+}
+.field-name-field-horizontal-links .field-item:nth-child(2n){
+    margin-right: 0;
+}
+.field-name-field-horizontal-links .field-item a{
+    display: block;
+    background-color: #ed1c24;
+    color: #FFF;
+    font-size: 30px;
+    padding: 15px 30px 18px;
+}
+
+/* Generic Block/Heading Styles */
+
+.iframe-responsive{
+    width: 100%;
+}
+
+.view-stories.border-sep h2.title,
+.view-call-to-action h2.title,
+.landing-block h2.block-title{
+    margin-bottom: 45px;
+    text-transform: lowercase;
+}
+.block ul.pager{
+    padding-top: 20px;
+}
+.block ul.pager li{
+    font-size: 16px;
+    font-family: opensans-semi;
+}
+.item-list-pager .throbber{
+    display: none;
+}
+.view-stories.link-footer .view-footer{
+    font-size: 22px;
+    text-align: right;
+    margin-top: 25px;
+    font-family: opensans-semi;
+}
+/*
+ * Footer
+ */
+
+#footer{
+    border-top: 2px solid #ee232b;
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+#footer #block-block-2{
+    float: left;
+    font-size: 16px;
+}
+#footer #block-block-3,
+#footer #block-block-4{
+    float: right;
+
+}
+#footer #block-block-4{
+    margin-left: 80px;
+}
+
+#footer h2,
+#footer h2 a{
+    font-family: opensans-light;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    color: #000;
+    text-transform: none;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+#footer h3 {
+    font-family: opensans;
+    font-weight: normal;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#footer .block-content a {
+    color: #000;
+}
+#footer #block-menu-block-2 {
+    float: right;
+    font-size: 18px;
+    margin-left: 80px;
+}
+#footer #block-menu-block-2 .block-content ul.menu {
+    padding: 0;
+    margin: 10px 0 0;
+}
+#footer #block-menu-block-2 .block-content ul.menu li {
+    list-style: none;
+}
+
+/* Social Media */
+#block-views-group-networks-block-2 .block-title,
+#block-views-group-networks-block-1 .block-title{
+    margin-bottom: 40px;
+}
+#block-views-group-networks-block-2 h2.node-title{
+    display: none;
+}
+#block-views-group-networks-block-1 h2.node-title{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#block-views-group-networks-block-1 .views-row{
+    margin-bottom: 40px;
+}
+.node-group-networks .field{
+    float: left;
+    margin-right: 2.15vw;
+    margin-bottom: 2.15vw;
+}
+.node-group-networks .field-item a{
+    width: 12.75vw;
+    height: 12.75vw;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    display: block;
+    background-size: cover;
+}
+#block-views-group-networks-block-1 .node-group-networks .field{
+    margin-right: 1.1vw;
+    margin-bottom: 1.1vw;    
+}
+#block-views-group-networks-block-1 .node-group-networks .field-item a{
+    width: 5.7vw;
+    height: 5.7vw;
+}
+#block-views-group-networks-block-1 .node-group-networks .field-item:last-child,
+.node-group-networks .field:last-child{
+    margin-right: 0;
+}
+.field-name-field-connect-fb a{
+    background-image: url(images/facebook.png);
+}
+.field-name-field-connect-twitter a{
+    background-image: url(images/twitter.png);
+}
+.field-name-field-connect-youtube a{
+    background-image: url(images/youtube.png);
+}
+.field-name-field-connect-instagram a{
+    background-image: url(images/instagram.png);
+}
+.field-name-field-connect-linkedin a{
+    background-image: url(images/linkedin.png);
+}
+.field-name-field-connect-google a{
+    background-image: url(images/google_plus.png);
+}

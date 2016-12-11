@@ -1,0 +1,538 @@
+/*
+ * responsive.custom.css is for custom media queries that are not set via the
+ * theme settings, such as cascading media queries.
+ *
+ * By default all the other responsive stylesheets used in Adaptivetheme use a
+ * "stacking method", however cascading media queries use a waterfall method so
+ * you can leverage the cascade and inheritance for all browsers that support
+ * media queries, regardless of screen size.
+ *
+ * @SEE http://zomigi.com/blog/essential-considerations-for-crafting-quality-media-queries/#mq-overlap-stack
+ *
+ * NOTE: this file loads by default, to disable got to your theme settings and
+ * look under the "CSS" settings tab.
+ */
+
+@media only screen and (min-width: 1400px) {
+    .pillar-menu h2.block-title{
+        font-size: 200px;
+    }
+    .pillar-menu ul.menu{
+        margin: 65px 0 100px;
+    }
+    .pillar-menu ul.menu li a{
+        font-size: 60px;
+    }
+    #block-views-homepage-statement-block .views-field-field-statement-link a,
+    .audience-menu ul.menu li a{
+        font-size: 36px;
+        padding: 17px 30px 20px;
+    }
+    .audience-menu ul.menu li{
+        margin: 0 0 5px;
+    }
+    #block-views-homepage-statement-block .views-field-body{
+        font-size: 30px;
+        padding: 50px 30px 70px;
+    }
+    .grid article .node-title a{
+        font-size: 24px;
+    }
+    .group-tax-card-content h2{
+        font-size: 24px;
+    }
+    .faq-back a,
+    .back-button a,
+    .group-bottom-links a{
+        font-size: 30px;
+    }
+    .prog-fellows-list .results-group > h3{
+        font-size: 36px;
+        padding-right: 90px;
+    }
+    .prog-fellows-list .results-group .results{
+        padding-right: 90px;
+    }
+    .node-group-networks .field{
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .node-group-networks .field-item a{
+        width: 178px;
+        height: 178px;
+    }
+    #block-views-group-networks-block-1 .node-group-networks .field-item a{
+        width: 80px;
+        height: 80px;
+    }
+    #block-views-group-networks-block-1 .node-group-networks .field{
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .views-exposed-form .views-exposed-widget{
+       width: 49.33%;
+       padding-right: 1.33%;
+    }
+    .views-exposed-form .views-exposed-widget:nth-child(2n),
+    .views-exposed-form .views-exposed-widget:nth-child(4n){
+        padding-right: 0;
+    }
+}
+@media only screen and (max-width: 980px) {
+    .group-tax-card-content h2{
+        font-size: 2.45vw;
+    }
+    .four-wide .views-row,
+    .four-wide .views-row:nth-child(4n){
+        float: left;
+        width: 33.06%;
+        margin-right: .4%;
+    }
+    .four-wide .views-row:nth-child(3n){
+        margin-right: 0;
+    }
+    .node-type-people .group-image-left {
+        width: 37%;
+        padding-right: 3%;
+    }
+    .node-type-people .group-content-right{
+        width: 60%;
+    }
+    .group-date .field-name-field-event-date{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    #page{
+        padding-top: 45px;
+    }
+    .three-wide .views-row,
+    .three-wide .views-row:nth-child(3n){
+        float: left;
+        width: 49.5%;
+        margin-right: 1%;
+    }
+    .three-wide .views-row:nth-child(2n){
+        margin-right: 0;
+    }
+    .prog-fellows-list .results-group > h3{
+        background-size: 20px;
+        font-size: 22px;
+        padding-left: 50px;
+    }
+    .prog-fellows-list .results-group .results{
+        padding: 30px 40px 30px 50px;
+    }
+    .group-description-links .field-name-field-vertical-links a{
+        font-size: 24px;
+        padding-right: 20px;
+    }
+    .group-description-links .taxonomy-term-description{
+        padding-right: 50px;
+    }
+    .group-large-content h2.node-title{
+        margin-bottom: 10px;
+    }
+    .group-large-content .field-name-body{
+        font-size: 14px;
+    }
+    .group-large-image .type-link a{
+        font-size: 18px;
+        padding: 10px 70px 10px 20px;
+    }
+    .group-large-image .type-link{
+        bottom: 30px;
+    }
+    .group-large-image, .group-large-content{
+        display: block;
+        padding: 0;
+        width: 100%;
+        min-width: 0;
+    }
+    .group-large-image{
+        margin-bottom: 20px;
+    }
+    .field-name-field-horizontal-links .field-item a{
+        font-size: 20px;
+        padding: 11px 20px 13px;    
+    }
+    .grid.explore article .node-title a{
+        font-size: 26px;
+        padding: 6px 15px 10px;
+    }
+    .field-name-field-cta-description a{
+        font-size: 16px;
+        padding: 15px 10px 30px;
+    }
+    #branding{
+        width: 400px;
+    }
+    #search-glass{
+        margin-top: 77px;
+    }
+    #search-glass img{
+        width: 35px;
+    }
+    #burger-wrap{
+        margin-top: 75px;
+    }
+    .burger{
+        font-size: 20px;
+    }
+    .burger img{
+        width: 40px;
+    }
+    #footer #block-menu-block-2,
+    #footer #block-block-4{
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .group-bottom-links a{
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .faq-back a,
+    .back-button a{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    h1{
+        font-size: 45px;
+    }
+    h2{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .four-wide .views-row,
+    .four-wide .views-row:nth-child(3n),
+    .four-wide .views-row:nth-child(4n){
+        float: left;
+        width: 49.5%;
+        margin-right: 1%;
+    }
+    .four-wide .views-row:nth-child(2n){
+        margin-right: 0;
+    }   
+    .two-wide .views-row,
+    .two-wide .views-row:nth-child(2n){
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    .grid.two-wide article{
+        height: auto !important;
+    }
+    .front .three-wide article .node-title a,
+    .grid.two-wide article .node-title a{
+        font-size: 18px;
+        padding: 20px;
+    }
+    .group-tax-card-content h2{
+        font-size: 3.15vw;
+    }
+    .node-people.node-teaser .group-image-left{
+        padding-right: 8%;
+    }
+    .node-people.node-mini-teaser .node-content > h2, .node-people.node-mini-teaser .node-content > div{
+        display: block;
+        margin-right: 0;
+    }
+    .node-people.node-mini-teaser .field-name-field-title-dept .field-items > .field-item{
+        display: block;
+    }
+    .node-people.node-mini-teaser .field-name-field-title-dept .field-items > .field-item:after{
+        margin: 0;
+        content: '';
+    }
+    .node-people.node-mini-teaser .node-content > h2{
+        margin-bottom: 3px;
+    }
+    .node-type-people .group-image-left,
+    .node-type-people .group-content-right{
+        display: block;
+        padding-right: 0;
+        width: 100%;
+    }
+    .node-type-people .group-image-left{
+        margin-bottom: 20px;
+    }
+    .group-media-area,
+    .group-story-content,
+    .group-topics,
+    .back-button,
+    .border-sep{
+        margin-top: 35px;
+        padding-top: 35px;        
+    }
+    .view-stories.border-sep h2.title,
+    .view-call-to-action h2.title,
+    .landing-block h2.block-title{
+        margin-bottom: 25px;
+    }
+    .group-prog-apply .field-name-field-application-url,
+    .group-prog-apply .field-name-field-apply,
+    .group-prog-about .taxonomy-term-description,
+    .group-prog-about .fellows-link{
+        display: block;
+        width: 100%;
+    }
+    .group-prog-about .taxonomy-term-description,
+    .group-prog-apply .field-name-field-apply{
+        padding-right: 0;
+    }
+    .group-prog-about .fellows-link,
+    .group-prog-apply .field-name-field-application-url a{
+        font-size: 20px;
+    }
+    .view-events .attachment .group-event-info,
+    .view-events .attachment .group-event-image,
+    .node-type-event .group-event-image,
+    .node-type-event .group-event-info,
+    .group-date,
+    .group-event-info{
+        display: block;
+        width: 100%;
+        padding-right: 0;
+    }
+    .group-event-image,
+    .view-events .attachment .group-event-image{
+        margin-bottom: 20px;
+    }
+    .group-date .field-name-field-event-date{
+        padding: 0;
+        border: none;
+        margin-bottom: 6px;
+    }
+    .node-type-event .addeventatc:hover,
+    .node-type-event .addeventatc:focus,
+    .node-type-event .addeventatc:active,
+    .node-type-event .addeventatc,
+    .field-name-field-event-registration-url a{
+        font-size: 22px;
+        padding: 20px 15px;
+    }
+    .group-description-links .taxonomy-term-description{
+        padding-right: 30px;
+    }
+    .group-description-links .field-name-field-vertical-links a {
+        font-size: 18px;
+        padding-right: 18px;
+    }
+    .views-exposed-form .views-exposed-widget{
+       width: 100%;
+       float: none;
+       padding-right: 0;
+    }
+    .pillar-menu ul.menu{
+        margin: 45px 0 45px;
+    }
+    .pillar-menu ul.menu li{
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    #block-views-homepage-statement-block .views-field-body{
+       font-size: 16px;
+       padding: 20px;
+    }
+    
+    .pillar-menu ul.menu li a,
+    .audience-menu ul.menu li a,
+    #block-views-homepage-statement-block .views-field-field-statement-link a{
+        font-size: 22px;
+        padding: 12px 20px 14px;
+        text-align: left;
+    }
+    #block-views-homepage-statement-block{
+        width: 100%;
+        margin-bottom: 45px;
+    }
+    .audience-menu{
+        width: 100%;
+        margin-left: 0;
+    }
+    #block-views-stories-block-2{
+        margin-top: 60px;
+    }
+    .front .three-wide .views-row{
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    #footer #block-block-3{
+        margin-right: 40px;
+        margin-top: 20px;
+    }
+    #footer #block-block-4{
+        clear: both;
+        float: left;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 680px) {
+    #branding{
+        width: 320px;
+    }
+    #burger-wrap{
+        margin-top: 58px;
+    }
+    #search-glass{
+        margin-top: 60px;
+    }
+}
+@media only screen and (max-width: 620px) {
+    .three-wide .views-row,
+    .three-wide .views-row:nth-child(2n),
+    .three-wide .views-row:nth-child(3n){
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    .grid.three-wide article{
+        height: auto !important;
+    }
+    .three-wide .group-tax-card-content{
+        height: auto !important;
+    }
+    .group-date-info, .group-time-location > div{
+        display: block;
+        margin-right: 0;
+    }   
+    .group-tax-card-content h2{
+        font-size: 20px;
+    }
+    #block-search-form{
+        width: 100%;
+        margin-top: 20px;
+        box-sizing: border-box;
+    }
+    #branding{
+        float: none;
+        width: auto;
+        max-width: 400px;
+    }
+    #burger-wrap,
+    #search-glass{
+        float: left;
+    }
+    #burger-wrap{
+        margin-top: 28px;
+    }
+    #search-glass{
+        margin-right: 0;
+        margin-left: 25px;
+        margin-top: 29px;
+    }
+.node-group-networks .field{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.node-group-networks .field-item a{
+    width: 60px;
+    height: 60px;
+}
+#block-views-group-networks-block-1 .node-group-networks .field{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#block-views-group-networks-block-1 .node-group-networks .field-item a{
+    width: 40px;
+    height: 40px;
+}
+}
+
+@media only screen and (max-width: 500px) {
+    .four-wide .views-row,
+    .four-wide .views-row:nth-child(2n),
+    .four-wide .views-row:nth-child(3n),
+    .four-wide .views-row:nth-child(4n){
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    .grid.four-wide article{
+        height: auto !important;
+    }
+    .grid.four-wide article .node-title a{
+        height: auto !important;
+    }
+    .title-only .group-tax-card-content{
+        height: auto !important;
+    }
+    .title-only .group-tax-card-content h2{
+        font-size: 18px;
+    }
+    .title-only .group-tax-card-content h2 a{
+        padding: 20px;
+    }
+    .vocabulary-person-type .group-tax-card-content, 
+    .vocabulary-initiatives .group-tax-card-content{
+        height: auto !important;
+    }
+    .node-people.node-teaser .group-image-left,
+    .node-people.node-teaser .group-content-right{
+        display: block;
+    }
+    .node-people.node-teaser .group-image-left{
+        padding-right: 0;
+        margin-bottom: 8px;
+    }
+    .group-event-buttons > div{
+        display: block;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+    .group-event-buttons > div:last-child{
+        margin-bottom: 0;
+    }
+    .group-description-links .taxonomy-term-description,
+    .group-description-links .field-name-field-vertical-links{
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .field-name-field-horizontal-links .field-item{
+        display: block;
+        width: 100%;
+        margin: 0 0 10px;
+    }
+    .field-name-field-horizontal-links .field-item:last-child{
+        margin-bottom: 0;
+    }
+    .front .three-wide article .node-title,
+    .grid.two-wide article .node-title{
+        position: relative;
+        background: #000;
+    }
+    .front .three-wide article .node-title a,
+    .grid.two-wide article .node-title a{
+        height: auto !important;
+    }
+    .cycle-button{
+        display: none;
+    }
+    .node-type-story h2.node-title{
+        font-size: 36px;
+    }
+    #footer #block-block-2,
+    #footer #block-menu-block-2,
+    #footer #block-block-4,
+    #footer #block-block-3{
+        float: none;
+        margin: 0 0 20px 0;
+    }
+}
