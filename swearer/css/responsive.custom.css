@@ -15,13 +15,16 @@
 
 @media only screen and (min-width: 1400px) {
     .pillar-menu h2.block-title{
-        font-size: 200px;
+        font-size: 180px;
     }
     .pillar-menu ul.menu{
-        margin: 65px 0 100px;
+        margin: 55px 0 90px;
     }
     .pillar-menu ul.menu li a{
         font-size: 60px;
+    }
+    #block-views-stories-block-2{
+        margin-top: 90px;
     }
     #block-views-homepage-statement-block .views-field-field-statement-link a,
     .audience-menu ul.menu li a{

@@ -853,7 +853,7 @@ h1#page-title{
 }
 
 #page{
-    padding-top: 65px;
+    padding-top: 55px;
 }
 
 .container{
@@ -862,7 +862,7 @@ h1#page-title{
 }
 
 #header-wrapper{
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 #branding{
     float: left;
@@ -927,12 +927,12 @@ h1#page-title{
 }
 
 .pillar-menu h2.block-title{
-        font-size: 14.3vw;
+        font-size: 12.9vw;
         text-transform: capitalize;
 }
 .pillar-menu ul.menu{
     padding: 0;
-    margin: 4.65vw 0 7.15vw;
+    margin: 3.95vw 0 6.45vw;
 }
 .pillar-menu ul.menu li{
     display: inline-block;
@@ -1010,7 +1010,7 @@ h1#page-title{
 }
 
 #block-views-stories-block-2{
-    margin-top: 120px;
+    margin-top: 6.45vw;
 }
 
 /* Grid Displays */
