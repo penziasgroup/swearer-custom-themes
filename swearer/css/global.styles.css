@@ -1185,10 +1185,16 @@ article.node-story.node-mini-teaser:hover:before{
 .group-story-content,
 .group-topics,
 .back-button,
-.border-sep{
+.border-sep,
+.field-name-field-page-content > .field-items > .field-item{
     margin-top: 45px;
     padding-top: 45px;
     border-top: 1px solid #fc0d1b;
+}
+#content > #block-system-main:first-child > article > .content > .paragraphs-items-field-page-content:first-child .field-name-field-page-content > .field-items > .field-item{
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
 }
 .group-topics{
     padding-top: 20px;
@@ -1857,27 +1863,30 @@ article.node-story.node-mini-teaser:hover:before{
     font-size: 16px;
 }
 
-.group-description-links .taxonomy-term-description{
-    padding-right: 70px;
+.paragraphs-item-standard-content .content .field-name-field-vertical-links,
+.group-description-links .field-name-field-vertical-links{
+    padding-left: 70px;
 }
 
+.paragraphs-item-standard-content .content .field-name-field-vertical-links,
+.paragraphs-item-standard-content .content .field-name-field-content-textarea,
 .group-description-links .taxonomy-term-description,
 .group-description-links .field-name-field-vertical-links{
     display: table-cell;
     vertical-align: top;
 }
 
-.group-description-links .field-name-field-vertical-links .field-item{
+.field-name-field-vertical-links .field-item{
     border-bottom: 1px solid #ed1c24;
     padding-bottom: 15px;
     margin-bottom: 15px;
 }
-.group-description-links .field-name-field-vertical-links .field-item:last-child{
+.field-name-field-vertical-links .field-item:last-child{
     border-bottom: 0;
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.group-description-links .field-name-field-vertical-links a{
+.field-name-field-vertical-links a{
     font-size: 30px;
     line-height: 1.2;
     display: block;
