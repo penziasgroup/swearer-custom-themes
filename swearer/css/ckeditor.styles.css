@@ -84,7 +84,8 @@ h1{
     margin-bottom: 20px;
     line-height: 1;
 }
-h2{
+h2,
+.field-name-field-content-header{
     font-size: 48px;
     font-family: opensans;
     color: #ed1c24;
@@ -93,7 +94,9 @@ h2{
     line-height: 1;
     margin-bottom: 20px;
 }
-
+.field-name-field-content-header{
+    margin-bottom: 35px;
+}
 hr{
     border: none;
     border-top: 1px solid #ed1c24;

@@ -213,9 +213,13 @@
     h1{
         font-size: 45px;
     }
-    h2{
+    h2,
+    .field-name-field-content-header{
         font-size: 30px;
         margin-bottom: 15px;
+    }
+    .field-name-field-content-header{
+        margin-bottom: 25px;
     }
     .four-wide .views-row,
     .four-wide .views-row:nth-child(3n),
