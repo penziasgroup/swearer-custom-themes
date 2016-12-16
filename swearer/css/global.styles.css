@@ -1876,7 +1876,10 @@ article.node-story.node-mini-teaser:hover:before{
     display: table-cell;
     vertical-align: top;
 }
-
+.paragraphs-item-standard-content .content .field-name-field-content-textarea,
+.group-description-links .taxonomy-term-description{
+    width: 87%;
+}
 .field-name-field-vertical-links .field-item{
     border-bottom: 1px solid #ed1c24;
     padding-bottom: 15px;
