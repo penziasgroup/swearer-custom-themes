@@ -1386,6 +1386,12 @@ article.node-story.node-mini-teaser:hover:before{
 .node-people.node-mini-teaser a{
     color: #000;
 }
+.node-type-people .field-name-field-office-hours{
+    margin-top: 15px;
+}
+.node-type-people .field-name-field-office-hours p{
+    margin-bottom: 0;
+}
 .node-people.node-teaser h2.node-title{
     font-size: 24px;
     font-family: opensans-semi;
