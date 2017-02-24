@@ -853,7 +853,7 @@ h1#page-title{
 }
 
 #page{
-    padding-top: 55px;
+    padding-top: 50px;
 }
 
 .container{
@@ -862,7 +862,7 @@ h1#page-title{
 }
 
 #header-wrapper{
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 #branding{
     float: left;
@@ -876,14 +876,17 @@ h1#page-title{
 .region-header{
     clear: both;
 }
+#logo img{
+    max-width: 560px;
+}
 #burger-wrap{
-    margin-top: 138px;
+    margin-top: 124px;
 }
 #search-glass{
     cursor: pointer;
     margin-left: 10px;
     margin-right: 25px;
-    margin-top: 140px;
+    margin-top: 126px;
 }
 #block-search-form{
     margin-bottom: 0;
@@ -1116,6 +1119,14 @@ h1#page-title{
 .four-wide .views-row:nth-child(4n){
     margin-right: 0;
 }
+.five-wide .views-row{
+    float: left;
+    width: 19.28%;
+    margin-right: .89%;
+}
+.five-wide .views-row:nth-child(5n){
+    margin-right: 0;
+}
 
 /* Stories */
 
@@ -1215,7 +1226,6 @@ article.node-story.node-mini-teaser:hover:before{
     font-size: 48px;
     color: #000;
     font-family: opensans-semi;
-    text-transform: lowercase;
     margin-bottom: 20px;
 }
 
@@ -1831,7 +1841,7 @@ article.node-story.node-mini-teaser:hover:before{
     vertical-align: top;
 }
 .group-large-image{
-    width: 73%;
+    width: 50%;
 }
 .group-tag-wrap{
     position: relative;
@@ -1852,7 +1862,7 @@ article.node-story.node-mini-teaser:hover:before{
     display: block;
 }
 .group-large-content{
-    width: 25%;
+    width: 50%;
     min-width: 345px;
     padding-left: 2%;
 }
@@ -2021,24 +2031,24 @@ article.node-story.node-mini-teaser:hover:before{
 }
 .node-group-networks .field{
     float: left;
-    margin-right: 2.15vw;
-    margin-bottom: 2.15vw;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 .node-group-networks .field-item a{
-    width: 12.75vw;
-    height: 12.75vw;
+    width: 60px;
+    height: 60px;
     text-indent: -9999px;
     background-repeat: no-repeat;
     display: block;
     background-size: cover;
 }
 #block-views-group-networks-block-1 .node-group-networks .field{
-    margin-right: 1.1vw;
-    margin-bottom: 1.1vw;    
+    margin-right: 10px;
+    margin-bottom: 10px;   
 }
 #block-views-group-networks-block-1 .node-group-networks .field-item a{
-    width: 5.7vw;
-    height: 5.7vw;
+    width: 40px;
+    height: 40px;
 }
 #block-views-group-networks-block-1 .node-group-networks .field-item:last-child,
 .node-group-networks .field:last-child{

@@ -15,28 +15,28 @@
 
 @media only screen and (min-width: 1400px) {
     .pillar-menu h2.block-title{
-        font-size: 180px;
+        font-size: 135px;
     }
     .pillar-menu ul.menu{
-        margin: 55px 0 90px;
+        margin: 40px 0 70px;
     }
     .pillar-menu ul.menu li a{
-        font-size: 60px;
+        font-size: 45px;
     }
     #block-views-stories-block-2{
-        margin-top: 90px;
+        margin-top: 70px;
     }
     #block-views-homepage-statement-block .views-field-field-statement-link a,
     .audience-menu ul.menu li a{
-        font-size: 36px;
+        font-size: 27px;
         padding: 17px 30px 20px;
     }
     .audience-menu ul.menu li{
         margin: 0 0 5px;
     }
     #block-views-homepage-statement-block .views-field-body{
-        font-size: 30px;
-        padding: 50px 30px 70px;
+        font-size: 22px;
+        padding: 40px 30px 52px;
     }
     .grid article .node-title a{
         font-size: 24px;
@@ -56,22 +56,6 @@
     .prog-fellows-list .results-group .results{
         padding-right: 90px;
     }
-    .node-group-networks .field{
-        margin-right: 30px;
-        margin-bottom: 30px;
-    }
-    .node-group-networks .field-item a{
-        width: 178px;
-        height: 178px;
-    }
-    #block-views-group-networks-block-1 .node-group-networks .field-item a{
-        width: 80px;
-        height: 80px;
-    }
-    #block-views-group-networks-block-1 .node-group-networks .field{
-        margin-right: 15px;
-        margin-bottom: 15px;
-    }
 }
 @media only screen and (max-width: 1023px) {
     .views-exposed-form .views-exposed-widget{
@@ -83,17 +67,32 @@
         padding-right: 0;
     }
 }
+@media only screen and (max-width: 1160px) {
+    .five-wide .views-row,
+    .five-wide .views-row:nth-child(5n){
+    float: left;
+    width: 24.33%;
+    margin-right: .89%;
+    }
+    .five-wide .views-row:nth-child(4n){
+        margin-right: 0;
+    }
+}
 @media only screen and (max-width: 980px) {
     .group-tax-card-content h2{
         font-size: 2.45vw;
     }
     .four-wide .views-row,
-    .four-wide .views-row:nth-child(4n){
+    .five-wide .views-row,
+    .four-wide .views-row:nth-child(4n),
+    .five-wide .views-row:nth-child(4n),
+    .five-wide .views-row:nth-child(5n){
         float: left;
         width: 33.06%;
         margin-right: .4%;
     }
-    .four-wide .views-row:nth-child(3n){
+    .four-wide .views-row:nth-child(3n),
+    .five-wide .views-row:nth-child(3n){
         margin-right: 0;
     }
     .node-type-people .group-image-left {
@@ -223,12 +222,17 @@
     }
     .four-wide .views-row,
     .four-wide .views-row:nth-child(3n),
-    .four-wide .views-row:nth-child(4n){
+    .four-wide .views-row:nth-child(4n),
+    .five-wide .views-row,
+    .five-wide .views-row:nth-child(3n),
+    .five-wide .views-row:nth-child(4n),
+    .five-wide .views-row:nth-child(5n){
         float: left;
         width: 49.5%;
         margin-right: 1%;
     }
-    .four-wide .views-row:nth-child(2n){
+    .four-wide .views-row:nth-child(2n),
+    .five-wide .views-row:nth-child(2n){
         margin-right: 0;
     }   
     .two-wide .views-row,
@@ -446,37 +450,28 @@
         margin-left: 25px;
         margin-top: 29px;
     }
-.node-group-networks .field{
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-.node-group-networks .field-item a{
-    width: 60px;
-    height: 60px;
-}
-#block-views-group-networks-block-1 .node-group-networks .field{
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-#block-views-group-networks-block-1 .node-group-networks .field-item a{
-    width: 40px;
-    height: 40px;
-}
 }
 
 @media only screen and (max-width: 500px) {
     .four-wide .views-row,
     .four-wide .views-row:nth-child(2n),
     .four-wide .views-row:nth-child(3n),
-    .four-wide .views-row:nth-child(4n){
+    .four-wide .views-row:nth-child(4n),
+    .five-wide .views-row,
+    .five-wide .views-row:nth-child(2n),
+    .five-wide .views-row:nth-child(3n),
+    .five-wide .views-row:nth-child(4n),
+    .five-wide .views-row:nth-child(5n){
         float: none;
         width: 100%;
         margin-right: 0;
     }
-    .grid.four-wide article{
+    .grid.four-wide article,
+    .grid.five-wide article{
         height: auto !important;
     }
-    .grid.four-wide article .node-title a{
+    .grid.four-wide article .node-title a,
+    .grid.five-wide article .node-title a{
         height: auto !important;
     }
     .title-only .group-tax-card-content{
