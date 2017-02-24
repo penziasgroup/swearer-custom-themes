@@ -1020,7 +1020,7 @@ h1#page-title{
 .grid:after{
     content: '';
     clear: both;
-    display: block;
+    display: block;lowe
 }
 .grid article{
     position: relative;
@@ -1252,7 +1252,6 @@ article.node-story.node-mini-teaser:hover:before{
     margin-top: 0;
     font-family: opensans-light;
     font-size: 24px;
-    text-transform: lowercase;
     font-weight: normal;
 }
 
@@ -1938,7 +1937,6 @@ article.node-story.node-mini-teaser:hover:before{
 .view-call-to-action h2.title,
 .landing-block h2.block-title{
     margin-bottom: 45px;
-    text-transform: lowercase;
 }
 .block ul.pager{
     padding-top: 20px;
