@@ -950,7 +950,7 @@ h1#page-title{
 .pillar-menu ul.menu li a{
     display: block;
     background-color: #ed1c24;
-    font-size: 4.3vw;
+    font-size: 3.2vw;
     color: #FFF;
     line-height: 1;
     padding: 7px 0 17px;
@@ -972,14 +972,14 @@ h1#page-title{
 }
 
 #block-views-homepage-statement-block .views-field-body{
-    font-size: 2.15vw;
+    font-size: 1.55vw;
     padding: 3.57vw 2vw 5vw 2.5vw;
     line-height: 1.4;
     background-color: rgba(255,255,255,.7);
     margin-bottom: 7px;
 }
 #block-views-homepage-statement-block .views-field-field-statement-link a{
-    font-size: 2.58vw;
+    font-size: 1.95vw;
     padding: 1.22vw 2.2vw 1.45vw;
     line-height: 1.2;
     background-color: #ed1c24;
@@ -1005,7 +1005,7 @@ h1#page-title{
 .audience-menu ul.menu li a{
     background-color: #ed1c24;
     color: #FFF;
-    font-size: 2.58vw;
+    font-size: 1.95vw;
     padding: 1.22vw 2.2vw 1.45vw;
     display: block;
     text-transform: lowercase;
