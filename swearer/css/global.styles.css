@@ -878,6 +878,7 @@ h1#page-title{
 }
 #logo img{
     max-width: 560px;
+    width: 100%;
 }
 #burger-wrap{
     margin-top: 124px;
@@ -2096,6 +2097,7 @@ article.node-story.node-mini-teaser:hover:before{
 .field-name-field-social-links .field-items .field-item{
     display: inline-block;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 .field-name-field-social-links a{
     display: block;
@@ -2103,4 +2105,15 @@ article.node-story.node-mini-teaser:hover:before{
     color: #FFF;
     background: #ed1c24;
     font-size: 15px;
+}
+
+#side-menu-wrapper .menu-buttons .menu a{
+    background-color: #ed1c24;
+    display: block;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 16px;
+    padding: 7px 0;
+    margin-bottom: 15px;
+    color: #FFF; 
 }
