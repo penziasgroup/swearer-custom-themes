@@ -2027,12 +2027,12 @@ article.node-story.node-mini-teaser:hover:before{
 #block-views-group-networks-block-1 .views-row{
     margin-bottom: 40px;
 }
-.node-group-networks .field{
+.node-group-networks .group-icons .field{
     float: left;
     margin-right: 10px;
     margin-bottom: 10px;
 }
-.node-group-networks .field-item a{
+.node-group-networks .group-icons .field-item a{
     width: 60px;
     height: 60px;
     text-indent: -9999px;
@@ -2040,16 +2040,16 @@ article.node-story.node-mini-teaser:hover:before{
     display: block;
     background-size: cover;
 }
-#block-views-group-networks-block-1 .node-group-networks .field{
+#block-views-group-networks-block-1 .node-group-networks .group-icons .field{
     margin-right: 10px;
     margin-bottom: 10px;   
 }
-#block-views-group-networks-block-1 .node-group-networks .field-item a{
+#block-views-group-networks-block-1 .node-group-networks .group-icons .field-item a{
     width: 40px;
     height: 40px;
 }
-#block-views-group-networks-block-1 .node-group-networks .field-item:last-child,
-.node-group-networks .field:last-child{
+#block-views-group-networks-block-1 .node-group-networks .group-icons .field-item:last-child,
+.node-group-networks .group-icons .field:last-child{
     margin-right: 0;
 }
 .field-name-field-connect-fb a{
@@ -2076,10 +2076,31 @@ article.node-story.node-mini-teaser:hover:before{
 .social-footer h2.node-title{
     display: none;
 }
-.social-footer .node-group-networks .field-item a{
+.group-icons{
+    overflow: hidden;
+}
+.social-footer .node-group-networks .group-icons .field-item a{
     width: 25px;
     height: 25px;
 }
-.social-footer .node-group-networks .field{
+.social-footer .field-name-field-social-links{
+    display: none;
+}
+.social-footer .node-group-networks .group-icons .field{
     margin-right: 7px;
+}
+.field-name-field-social-links{
+    clear: both;
+    margin-top: 20px;
+}
+.field-name-field-social-links .field-items .field-item{
+    display: inline-block;
+    margin-right: 10px;
+}
+.field-name-field-social-links a{
+    display: block;
+    padding: 10px 20px 12px;
+    color: #FFF;
+    background: #ed1c24;
+    font-size: 15px;
 }
