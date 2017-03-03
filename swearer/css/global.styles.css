@@ -2070,3 +2070,16 @@ article.node-story.node-mini-teaser:hover:before{
 .field-name-field-connect-google a{
     background-image: url(images/google_plus.png);
 }
+.social-footer{
+    clear: both;
+}
+.social-footer h2.node-title{
+    display: none;
+}
+.social-footer .node-group-networks .field-item a{
+    width: 25px;
+    height: 25px;
+}
+.social-footer .node-group-networks .field{
+    margin-right: 7px;
+}

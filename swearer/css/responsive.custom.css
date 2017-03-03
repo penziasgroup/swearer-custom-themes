@@ -395,6 +395,9 @@
         margin-left: 0;
         margin-top: 20px;
     }
+    .social-footer{
+        padding-top: 20px;
+    }
 }
 @media only screen and (max-width: 680px) {
     #branding{
@@ -542,5 +545,8 @@
     #footer #block-block-3{
         float: none;
         margin: 0 0 20px 0;
+    }
+    .social-footer{
+        padding-top: 0px;
     }
 }
