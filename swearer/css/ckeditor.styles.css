@@ -71,7 +71,7 @@ src: url("fonts/vitesse-bold.otf") format("opentype");
 
 body{
     font-family: opensans;
-    font-size: 13px;
+    font-size: 16px;
     color: #000;
 }
 
