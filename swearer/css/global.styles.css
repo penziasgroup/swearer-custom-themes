@@ -1355,6 +1355,20 @@ article.node-story.node-mini-teaser:hover:before{
     display: block;
 }
 
+.vocabulary-programs .card-hover-text{
+    position: absolute;
+    color: #FFF;
+    background: rgba(0,0,0,.5);
+    height: 100%;
+    width: 100%;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    display: none;
+}
+.vocabulary-programs:hover .card-hover-text{
+    display: block;
+}
+
 /* People */
 .advisors-list .results-group,
 .people-list .views-row{
