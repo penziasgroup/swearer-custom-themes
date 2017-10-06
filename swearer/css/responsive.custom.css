@@ -18,13 +18,13 @@
         font-size: 135px;
     }
     .pillar-menu ul.menu{
-        margin: 40px 0 70px;
+        margin: 0px 0 55px;
     }
     .pillar-menu ul.menu li a{
-        font-size: 45px;
+        font-size: 38px;
     }
     #block-views-stories-block-2{
-        margin-top: 70px;
+        margin-top: 55px;
     }
     #block-views-homepage-statement-block .views-field-field-statement-link a,
     .audience-menu ul.menu li a{
@@ -108,9 +108,6 @@
 }
 
 @media only screen and (max-width: 920px) {
-    #page{
-        padding-top: 45px;
-    }
     .three-wide .views-row,
     .three-wide .views-row:nth-child(3n){
         float: left;
@@ -170,17 +167,14 @@
         font-size: 16px;
         padding: 15px 10px 30px;
     }
-    #branding{
-        width: 400px;
-    }
     #search-glass{
-        margin-top: 77px;
+        margin-top: 72px;
     }
     #search-glass img{
         width: 35px;
     }
     #burger-wrap{
-        margin-top: 75px;
+        margin-top: 69px;
     }
     .burger{
         font-size: 20px;
@@ -251,9 +245,6 @@
     }
     .group-tax-card-content h2{
         font-size: 3.15vw;
-    }
-    .node-people.node-teaser .group-image-left{
-        padding-right: 8%;
     }
     .node-people.node-mini-teaser .node-content > h2, .node-people.node-mini-teaser .node-content > div{
         display: block;
@@ -404,10 +395,10 @@
         width: 320px;
     }
     #burger-wrap{
-        margin-top: 58px;
+        margin-top: 47px;
     }
     #search-glass{
-        margin-top: 60px;
+        margin-top: 49px;
     }
 }
 @media only screen and (max-width: 620px) {

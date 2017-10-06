@@ -104,9 +104,22 @@
 
 <?php
 
-if(isset($section_title)){
-    $title = '<span class="section">' . $section_title . '</span> ';
-}elseif (!empty($title)){
+$type = '';
+
+if (isset($node)){
+    $type = $node->type;
+}
+$section_path = drupal_get_path_alias();
+$section_path = explode('/', $section_path);
+$section_path = $section_path[0];
+dpm($section_path);
+
+if(isset($section_title) && $type != 'page'){
+    $title = '<span class="section"><a href="/' . $section_path . '">' . $section_title . '</a></span> ';
+}elseif (isset($section_title) && $type == 'page'){
+    $title = '<span class="section"><a href="/' . $section_path . '">' . $section_title . '</a></span><h2 class="node-title">' . $title . '</h2> ';
+}
+elseif (!empty($title)){
     $title = '<span class="section">' . $title . '</span> ';
 }
 

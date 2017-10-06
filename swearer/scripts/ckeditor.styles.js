@@ -18,6 +18,7 @@ if(typeof(CKEDITOR) !== 'undefined') {
             // "Format" drop-down list in the toolbar, maintaining the same features.
 
             { name : 'Paragraph'		, element : 'p' },
+            { name : 'Heading 1'		, element : 'h1' },
             { name : 'Heading 2'		, element : 'h2' },
             { name : 'Heading 3'		, element : 'h3' },
             { name : 'Intro Text'		, element : 'p', attributes : {'class':'intro'}  }

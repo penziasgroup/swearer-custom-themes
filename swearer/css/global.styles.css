@@ -864,6 +864,7 @@ h1#page-title{
 #header-wrapper{
     margin-bottom: 45px;
 }
+
 #branding{
     float: left;
 }
@@ -877,17 +878,17 @@ h1#page-title{
     clear: both;
 }
 #logo img{
-    max-width: 560px;
+    max-width: 420px;
     width: 100%;
 }
 #burger-wrap{
-    margin-top: 124px;
+    margin-top: 67px;
 }
 #search-glass{
     cursor: pointer;
     margin-left: 10px;
     margin-right: 25px;
-    margin-top: 126px;
+    margin-top: 69px;
 }
 #block-search-form{
     margin-bottom: 0;
@@ -936,7 +937,7 @@ h1#page-title{
 }
 .pillar-menu ul.menu{
     padding: 0;
-    margin: 3.95vw 0 6.45vw;
+    margin: 0 0 3.9vw;
 }
 .pillar-menu ul.menu li{
     display: inline-block;
@@ -951,7 +952,7 @@ h1#page-title{
 .pillar-menu ul.menu li a{
     display: block;
     background-color: #ed1c24;
-    font-size: 3.2vw;
+    font-size: 2.7vw;
     color: #FFF;
     line-height: 1;
     padding: 7px 0 17px;
@@ -1014,7 +1015,7 @@ h1#page-title{
 }
 
 #block-views-stories-block-2{
-    margin-top: 6.45vw;
+    margin-top: 3.9vw;
 }
 
 /* Grid Displays */
@@ -1397,7 +1398,7 @@ article.node-story.node-mini-teaser:hover:before{
 }
 .node-people.node-teaser .group-image-left{
     width: 200px;
-    padding-right: 15.75%;
+    padding-right: 35px;
 }
 .node-people.node-teaser .group-image-left img{
     min-width: 200px;
@@ -2130,4 +2131,14 @@ article.node-story.node-mini-teaser:hover:before{
     padding: 7px 0;
     margin-bottom: 15px;
     color: #FFF; 
+}
+
+.gsc-adBlock,
+.gsc-resultsHeader,
+.gcsc-branding{
+    display: none !important;
+}
+
+.field-name-field-content-textarea .field-items{
+    max-width: 920px;
 }
