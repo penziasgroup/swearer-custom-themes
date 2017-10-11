@@ -2142,3 +2142,17 @@ article.node-story.node-mini-teaser:hover:before{
 .field-name-field-content-textarea .field-items{
     max-width: 920px;
 }
+
+.field-name-field-event-type{
+    margin-bottom: 3px;
+}
+
+.field-name-field-event-type ul{
+    padding: 0;
+    margin: 0;
+}
+.field-name-field-event-type ul li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
