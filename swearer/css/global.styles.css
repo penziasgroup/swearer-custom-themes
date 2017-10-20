@@ -956,6 +956,7 @@ h1#page-title{
     color: #FFF;
     line-height: 1;
     padding: 7px 0 17px;
+    text-transform: lowercase;
 }
 
 #block-views-homepage-statement-block,

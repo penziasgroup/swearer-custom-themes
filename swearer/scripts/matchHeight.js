@@ -13,9 +13,11 @@
         $('.grid.explore article .field-name-field-cta-description a').matchHeight({   
             byRow: false
         });
-        $('.grid:not(.explore) article').matchHeight({   
+        /* Took this out - may not be needed now that we are using scale + crop image style as a backup for manual crop
+        $('.grid:not(.explore) article img').matchHeight({   
             byRow: false
         });
+        */
         $('.grid:not(.title-only) .group-tax-card-content').matchHeight({
             byRow: false
         });
