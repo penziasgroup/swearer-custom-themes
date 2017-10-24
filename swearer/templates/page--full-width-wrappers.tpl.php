@@ -114,9 +114,9 @@ $section_path = explode('/', $section_path);
 $section_path = $section_path[0];
 
 if(isset($section_title) && $type != 'page'){
-    $title = '<span class="section"><a href="/' . $section_path . '">' . $section_title . '</a></span> ';
+    $title = '<span class="section"><a href="/academics/college/swearer/' . $section_path . '">' . $section_title . '</a></span> ';
 }elseif (isset($section_title) && $type == 'page'){
-    $title = '<span class="section"><a href="/' . $section_path . '">' . $section_title . '</a></span><h2 class="node-title">' . $title . '</h2> ';
+    $title = '<span class="section"><a href="/academics/college/swearer/' . $section_path . '">' . $section_title . '</a></span><h2 class="node-title">' . $title . '</h2> ';
 }
 elseif (!empty($title)){
     $title = '<span class="section">' . $title . '</span> ';
