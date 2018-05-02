@@ -941,7 +941,7 @@ h1#page-title{
 }
 .pillar-menu ul.menu li{
     display: inline-block;
-    width: 33%;
+    width: 24.6%;
     padding: 0;
     margin-right: .5%;
     text-align: center;
@@ -2050,8 +2050,8 @@ article.node-story.node-mini-teaser:hover:before{
     margin-bottom: 10px;
 }
 .node-group-networks .group-icons .field-item a{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     text-indent: -9999px;
     background-repeat: no-repeat;
     display: block;
