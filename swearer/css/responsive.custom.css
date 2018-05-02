@@ -57,6 +57,17 @@
         padding-right: 90px;
     }
 }
+@media only screen and (max-width: 1024px) {
+    #page{
+        padding-top: 30px;
+    }
+    #logo img{
+        max-width: 360px;
+    }
+    #header-wrapper{
+        margin-bottom: 25px;
+    }
+}
 @media only screen and (max-width: 1023px) {
     .views-exposed-form .views-exposed-widget{
        width: 49.33%;
