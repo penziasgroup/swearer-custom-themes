@@ -24,6 +24,9 @@
         $('.grid.title-only .group-tax-card-content h2 a').matchHeight({
             byRow: false
         });
+        $('.field-name-field-horizontal-links .field-item').matchHeight({
+            byRow: true
+        });
 
     } // end of attach function
   };

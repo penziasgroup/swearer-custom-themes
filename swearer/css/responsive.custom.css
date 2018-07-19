@@ -400,6 +400,15 @@
     .social-footer{
         padding-top: 20px;
     }
+    .field-name-field-horizontal-links.link-count-3 .field-item,
+    .field-name-field-horizontal-links .field-item{
+        display: block;
+        width: 100%;
+        margin: 0 0 10px;
+    }
+    .field-name-field-horizontal-links .field-item:last-child{
+        margin-bottom: 0;
+    }
 }
 @media only screen and (max-width: 680px) {
     #branding{
@@ -517,14 +526,6 @@
         display: block;
         width: 100%;
         padding: 0;
-    }
-    .field-name-field-horizontal-links .field-item{
-        display: block;
-        width: 100%;
-        margin: 0 0 10px;
-    }
-    .field-name-field-horizontal-links .field-item:last-child{
-        margin-bottom: 0;
     }
     .front .three-wide article .node-title,
     .grid.two-wide article .node-title{

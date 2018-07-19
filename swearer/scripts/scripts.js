@@ -26,6 +26,14 @@
             $(this).toggleClass('open');
             $(this).siblings('.results').slideToggle();
         });
+        
+        /* Count Horizontal Links */
+
+        $('.field-name-field-horizontal-links').each(function(){                
+            var linkCount = $(this).children('.field-items').children().length;
+            $(this).addClass('link-count-' + linkCount);
+        });
+
     }
   }
 })(jQuery);
